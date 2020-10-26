@@ -71,12 +71,20 @@ public class MaquinaExpendedoraSimple {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
 
-        /**
+       /**
      * Simula la introduccion de dinero
      */
     public int getBalanceTotal() {
         balanceTotal = balanceTotal + balanceClienteActual;
         return balanceTotal;
+    }
+    
+    /**
+     * Vacia el deposito de dinero
+     */
+    public void vaciarDepositoDinero() {
+        totalDineroAcumulado = 0;
+        balanceTotal = 0;
     }
     
     /**
